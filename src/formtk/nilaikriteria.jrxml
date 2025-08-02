@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="97480959-5477-4ee2-a2f5-dad207f76135">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     nilaikriteria.`IDNilaiKriteria` AS nilaikriteria_IDNilaiKriteria,
+     nilaikriteria.`IDmobil` AS nilaikriteria_IDmobil,
+     nilaikriteria.`merk` AS nilaikriteria_merk,
+     nilaikriteria.`jarak` AS nilaikriteria_jarak,
+     nilaikriteria.`harga` AS nilaikriteria_harga,
+     nilaikriteria.`usiamobil` AS nilaikriteria_usiamobil,
+     nilaikriteria.`bbm` AS nilaikriteria_bbm
+FROM
+     `nilaikriteria` nilaikriteria]]>
+	</queryString>
+	<field name="nilaikriteria_IDNilaiKriteria" class="java.lang.String"/>
+	<field name="nilaikriteria_IDmobil" class="java.lang.String"/>
+	<field name="nilaikriteria_merk" class="java.lang.String"/>
+	<field name="nilaikriteria_jarak" class="java.math.BigDecimal"/>
+	<field name="nilaikriteria_harga" class="java.math.BigDecimal"/>
+	<field name="nilaikriteria_usiamobil" class="java.math.BigDecimal"/>
+	<field name="nilaikriteria_bbm" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="205" y="13" width="238" height="44" uuid="032b83ce-eeec-46ee-af6c-16c5cff6871d"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[TK ISLAM RABBANI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="57" width="227" height="20" uuid="71999e1d-298a-4e61-87f3-66a74b694acb"/>
+				<text><![CDATA[JL. Raya Bojongsari No 30. Sawangan - Depok]]></text>
+			</staticText>
+			<image>
+				<reportElement x="43" y="0" width="110" height="90" uuid="7ca01733-bbc3-4b98-a8de-15a5dee07df9"/>
+				<imageExpression><![CDATA["E:\\project\\2025\\tk\\src\\gambar\\WhatsApp Image 2025-06-09 at 08.40.00_df33b128.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="6" width="178" height="29" uuid="a8580f9a-95db-466d-84f0-c8fac8c4a500"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Nilai Kriteria]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="30" y="40" width="51" height="20" uuid="1741ebcc-6db6-4866-9a7e-abd233b52350"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="81" y="40" width="100" height="20" uuid="7a1b17c1-af0c-4c11-aa06-5e0eb7f36ff9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="180" y="40" width="100" height="20" uuid="6fe98971-412e-40a0-9d2c-b74c95b49e69"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="280" y="40" width="107" height="20" uuid="29fcfd43-92e6-45cb-ad2d-129e5b1d58fb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="386" y="40" width="83" height="20" uuid="8a5c29b3-cfe2-47e4-92b4-c265b77c98a5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="469" y="40" width="78" height="20" uuid="3cecc1bd-ab0b-44e7-a19e-1597bce53346"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="43" y="41" width="23" height="20" uuid="7de94a20-6eb8-44d7-b423-43c2bcca6159"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="41" width="100" height="20" uuid="6741c48e-66fc-4697-b60a-3bc25374f696"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="41" width="100" height="20" uuid="23d28f72-a262-4064-abdc-2dcf792da65b"/>
+				<text><![CDATA[ABSENSI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="41" width="100" height="20" uuid="8c17e6ae-6db5-4966-a139-febe9bc29cb3"/>
+				<text><![CDATA[NILAI AKADEMIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="41" width="100" height="20" uuid="16fc1a50-108a-4705-9336-f8c52fb6f494"/>
+				<text><![CDATA[KETERAMPILAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="40" width="100" height="20" uuid="7fdfbdac-05bb-4d3e-b86d-e192bf6c3c49"/>
+				<text><![CDATA[INDISIPLINER]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="196" y="0" width="84" height="20" uuid="f295810c-4082-48ee-801c-aff813e712cf"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_jarak}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="0" width="100" height="20" uuid="05f1ab49-324c-4590-bd2f-2e8fef9f4861"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="39" height="20" uuid="c73fc985-b47a-4fd6-9b51-8aecc16fc699"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_usiamobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="473" y="0" width="50" height="20" uuid="a60096f6-98f3-4612-9aa1-221b5eccb292"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_bbm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="43" y="0" width="38" height="20" uuid="569cff8a-d66a-4532-87e3-9f5c6c0ed7f9"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_IDNilaiKriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="38" height="20" uuid="94f2628a-2862-4596-99cc-1cb1cdbaf501"/>
+				<textFieldExpression><![CDATA[$F{nilaikriteria_merk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="165" splitType="Stretch">
+			<staticText>
+				<reportElement x="359" y="3" width="43" height="20" uuid="6ae1dc27-529a-41ee-8575-05b6b4d5d7b3"/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="402" y="3" width="145" height="20" uuid="552a06b8-8c4f-427b-96c7-696d3689ffc0"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="359" y="23" width="149" height="20" uuid="b73071cc-c20a-4408-8f93-09e54af57117"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Penanggung Jawab]]></text>
+			</staticText>
+			<line>
+				<reportElement x="374" y="124" width="145" height="1" uuid="8173a721-0e12-426c-930d-7ceb86dd586e"/>
+			</line>
+			<staticText>
+				<reportElement x="374" y="125" width="145" height="20" uuid="a1bcb199-9e1d-4ef5-ac04-ddd059871a79"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[DINO DWI]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="71abc2c2-58f9-419c-8f1f-af74b940998b">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     datamobil.`idmobil` AS datamobil_idmobil,
+     datamobil.`merk` AS datamobil_merk,
+     datamobil.`usiamobil` AS datamobil_usiamobil,
+     datamobil.`noRangka` AS datamobil_noRangka
+FROM
+     `datamobil` datamobil]]>
+	</queryString>
+	<field name="datamobil_idmobil" class="java.lang.String"/>
+	<field name="datamobil_merk" class="java.lang.String"/>
+	<field name="datamobil_usiamobil" class="java.lang.String"/>
+	<field name="datamobil_noRangka" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<staticText>
+				<reportElement x="247" y="24" width="112" height="34" uuid="50588851-6dac-4b76-8af8-4736b3ea18b6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[TK Islam Rabbani]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="196" y="44" width="216" height="16" uuid="48df8cda-a85b-43a3-bb42-88cf6cda899b"/>
+				<text><![CDATA[JL. Raya Bojongsari No 30. Sawangan - Depok]]></text>
+			</staticText>
+			<image>
+				<reportElement x="30" y="0" width="126" height="87" uuid="1a9fd36e-ea6a-42cf-9163-6a3715e32b87"/>
+				<imageExpression><![CDATA["E:\\project\\2025\\tk\\src\\gambar\\WhatsApp Image 2025-06-09 at 08.40.00_df33b128.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="4" width="178" height="29" uuid="a8580f9a-95db-466d-84f0-c8fac8c4a500"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Siswa]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="56" y="0" width="83" height="20" uuid="8e9ce4b5-c1e3-4dad-a000-2a5531135c60"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="139" y="0" width="118" height="20" uuid="c80235b2-f922-4b0d-a863-a0de40dad82a"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="257" y="0" width="106" height="20" uuid="13b175ba-1e76-4298-84e3-44edb3ebf027"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="0" width="127" height="20" uuid="2bb6e5e1-aec6-44e2-8dc9-eb8ab19c51e5"/>
+				<box>
+					<pen lineWidth="2.0"/>
+					<topPen lineWidth="2.0"/>
+					<leftPen lineWidth="2.0"/>
+					<bottomPen lineWidth="2.0"/>
+					<rightPen lineWidth="2.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="56" y="1" width="100" height="20" uuid="c673a21e-8d64-4036-ba2d-96820ac61ce8"/>
+				<textFieldExpression><![CDATA[$F{datamobil_idmobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="1" width="100" height="20" uuid="ce2f8e6b-b367-42ee-8867-4f93c2e75940"/>
+				<textFieldExpression><![CDATA[$F{datamobil_merk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="1" width="100" height="20" uuid="8bd4fd86-7fcb-4a06-99ab-035fa7d122d4"/>
+				<textFieldExpression><![CDATA[$F{datamobil_usiamobil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="1" width="100" height="20" uuid="e40f4a38-9046-44d8-920f-b139366ca6c1"/>
+				<textFieldExpression><![CDATA[$F{datamobil_noRangka}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement x="359" y="33" width="149" height="20" uuid="b73071cc-c20a-4408-8f93-09e54af57117"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Pemilik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="112" width="145" height="19" uuid="a1bcb199-9e1d-4ef5-ac04-ddd059871a79"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[(Agus M Amilah)]]></text>
+			</staticText>
+			<line>
+				<reportElement x="374" y="107" width="145" height="1" uuid="8173a721-0e12-426c-930d-7ceb86dd586e"/>
+			</line>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="402" y="13" width="145" height="20" uuid="552a06b8-8c4f-427b-96c7-696d3689ffc0"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="359" y="13" width="43" height="20" uuid="6ae1dc27-529a-41ee-8575-05b6b4d5d7b3"/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

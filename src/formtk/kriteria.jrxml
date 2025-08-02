@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2b4ef826-4290-490e-a5f4-7d8e7f647e54">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="c0f72d1d-eee1-4dd2-9dd9-195551bc2018"/>
+	<subDataset name="mobil" uuid="b25d638c-1685-4a19-a623-bcc808d49ba2">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     kriteria.`IDKriteria` AS kriteria_IDKriteria,
+     kriteria.`NamaKriteria` AS kriteria_NamaKriteria,
+     kriteria.`Bobot` AS kriteria_Bobot
+FROM
+     `kriteria` kriteria]]>
+		</queryString>
+		<field name="kriteria_IDKriteria" class="java.lang.String"/>
+		<field name="kriteria_NamaKriteria" class="java.lang.String"/>
+		<field name="kriteria_Bobot" class="java.math.BigDecimal"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     kriteria.`IDKriteria` AS kriteria_IDKriteria,
+     kriteria.`NamaKriteria` AS kriteria_NamaKriteria,
+     kriteria.`Bobot` AS kriteria_Bobot
+FROM
+     `kriteria` kriteria]]>
+	</queryString>
+	<field name="kriteria_IDKriteria" class="java.lang.String"/>
+	<field name="kriteria_NamaKriteria" class="java.lang.String"/>
+	<field name="kriteria_Bobot" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<staticText>
+				<reportElement x="215" y="27" width="254" height="49" uuid="d576065c-9730-482e-8be1-ea251aea1abd"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[TK ISLAM RABBANI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="65" width="271" height="20" uuid="f74a91c1-7ed8-40a8-b2ff-333daf269c18"/>
+				<text><![CDATA[JL. Raya Bojongsari No 30. Sawangan - Depok]]></text>
+			</staticText>
+			<image>
+				<reportElement x="37" y="11" width="126" height="94" uuid="5c516e4c-3ba5-4c94-8652-91d24c07e4e3"/>
+				<imageExpression><![CDATA["E:\\project\\2025\\tk\\src\\gambar\\WhatsApp Image 2025-06-09 at 08.40.00_df33b128.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="-319" y="13" width="178" height="29" uuid="a8580f9a-95db-466d-84f0-c8fac8c4a500"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Nilai Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-319" y="13" width="178" height="29" uuid="a8580f9a-95db-466d-84f0-c8fac8c4a500"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Nilai Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-319" y="13" width="178" height="29" uuid="a8580f9a-95db-466d-84f0-c8fac8c4a500"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Dashed"/>
+					<topPen lineWidth="0.75" lineStyle="Dashed"/>
+					<leftPen lineWidth="0.75" lineStyle="Dashed"/>
+					<bottomPen lineWidth="0.75" lineStyle="Dashed"/>
+					<rightPen lineWidth="0.75" lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Nilai Kriteria]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="9" y="20" width="147" height="29" uuid="2082e3e7-7ab6-4e25-bea6-7c3e14c58bf0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="22" width="194" height="20" uuid="55ff96f2-a1a6-4c35-a8f7-c6390011ccd5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA KRITERIA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<rectangle>
+				<reportElement x="9" y="23" width="147" height="20" uuid="e85ae7a2-8e74-4715-a131-0e0116363af8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="156" y="23" width="185" height="20" uuid="8a3bebd7-2bf5-4255-9604-29e79159451a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="341" y="23" width="100" height="20" uuid="c48777cd-7d1c-4227-a4f6-a8311b5b9030"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="56" y="23" width="100" height="20" uuid="37337f90-9979-43f0-9d05-3742a2b71d5a"/>
+				<text><![CDATA[ID Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="23" width="100" height="20" uuid="4806a384-b5e9-4725-bf4a-f038ee89f813"/>
+				<text><![CDATA[Nama Kriteria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="23" width="100" height="20" uuid="ac8eabd5-0d73-405b-9bed-037d535d4be4"/>
+				<text><![CDATA[Bobot]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="9" y="0" width="147" height="20" uuid="eb9cce42-52d0-4b2a-bb0d-5629c5618ea3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="156" y="0" width="185" height="20" uuid="03092eb7-4203-4588-97ad-dfe3e2f6d735"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="341" y="0" width="100" height="20" uuid="ed793c95-7a92-48a0-9cf9-7bd9fbd5d97b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="21" y="0" width="100" height="20" uuid="563b2514-70a7-4a15-be29-c07c4b14cb3d"/>
+				<textFieldExpression><![CDATA[$F{kriteria_IDKriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="0" width="100" height="20" uuid="613383da-4f47-4478-80b2-5523759b5050"/>
+				<textFieldExpression><![CDATA[$F{kriteria_NamaKriteria}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="100" height="20" uuid="75728998-274b-40e6-81c1-4266a3085e22"/>
+				<textFieldExpression><![CDATA[$F{kriteria_Bobot}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="165" splitType="Stretch">
+			<staticText>
+				<reportElement x="392" y="34" width="149" height="20" uuid="b73071cc-c20a-4408-8f93-09e54af57117"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Penanggung Jawab]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="14" width="43" height="20" uuid="6ae1dc27-529a-41ee-8575-05b6b4d5d7b3"/>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="406" y="14" width="145" height="20" uuid="552a06b8-8c4f-427b-96c7-696d3689ffc0"/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="396" y="144" width="145" height="1" uuid="8173a721-0e12-426c-930d-7ceb86dd586e"/>
+			</line>
+			<staticText>
+				<reportElement x="396" y="145" width="145" height="20" uuid="a1bcb199-9e1d-4ef5-ac04-ddd059871a79"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[DINO DWI]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
